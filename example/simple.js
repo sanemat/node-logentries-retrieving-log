@@ -10,7 +10,7 @@
 
 var LogentriesRetrievingLog = require('../');
 var retriever = LogentriesRetrievingLog({accountKey: '__YOUR_KEY__', logAddr: '__LOG_ADDR__'});
-retriever.get({limit: 10}, function(err, data){
+retriever.getLogs({limit: 10}, function(err, data){
   data.lines = [
     "145 <45>1 2014-12-16T13:00:45.518543+00:00 heroku api - - Add logentries:tryit add-on by o.gata.ken@gmail.com",
     "137 <45>1 2014-12-16T13:00:45.518543+00:00 heroku api - - Release v11 created by o.gata.ken@gmail.com",

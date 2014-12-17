@@ -17,7 +17,7 @@ describe('logentriesRetrievingLog', function () {
     nock('https://pull.logentries.com')
       .get('/__YOUR_KEY__/__LOG_ADDR__/?limet=10')
       .replyWithFile(200, __dirname + '/logentries-com-retrieved-logs.txt');
-    retriever.get({limit: 10}, function(err, data){
+    retriever.getLogs({limit: 10}, function(err, data){
       assert.equal(data.lines.length, 10);
       done();
     });
