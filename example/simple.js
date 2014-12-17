@@ -1,5 +1,5 @@
 /*
- * node-logentries-retrieving-log
+ * logentries-retrieving-log
  * https://github.com/sanemat/node-logentries-retrieving-log
  *
  * Copyright (c) 2014 sanemat
@@ -8,8 +8,8 @@
 
 'use strict';
 
-var nodeLogentriesRetrievingLog = require('../');
-var retriever = nodeLogentriesRetrievingLog({accountKey: '__YOUR_KEY__', logAddr: '__LOG_ADDR__'});
+var logentriesRetrievingLog = require('../');
+var retriever = logentriesRetrievingLog({accountKey: '__YOUR_KEY__', logAddr: '__LOG_ADDR__'});
 retriever.get({limit: 10}, function(err, data){
   data.lines = [
     "145 <45>1 2014-12-16T13:00:45.518543+00:00 heroku api - - Add logentries:tryit add-on by o.gata.ken@gmail.com",
@@ -24,8 +24,6 @@ retriever.get({limit: 10}, function(err, data){
     "152 <190>1 2014-12-16T13:00:56.108578+00:00 app web.1 - - ├── optimist@0.6.1 (wordwrap@0.0.2, minimist@0.0.10)"
   ]
 });
-
-console.log(nodeLogentriesRetrievingLog()); // "awesome"
 
 // API Downloads Documentation| Logentries Log Management Tools
 // https://logentries.com/doc/api-download/
