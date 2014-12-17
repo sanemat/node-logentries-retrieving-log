@@ -1,5 +1,5 @@
 {
-  "name": "node-logentries-retrieving-log",
+  "name": "logentries-retrieving-log",
   "description": "The best module ever.",
   "version": "0.0.0",
   "author": {
@@ -28,7 +28,7 @@
   "homepage": "https://github.com/sanemat/node-logentries-retrieving-log",
   "keywords": [],
   "license": "MIT",
-  "main": "lib/node-logentries-retrieving-log.js",
+  "main": "lib/logentries-retrieving-log.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/sanemat/node-logentries-retrieving-log"
