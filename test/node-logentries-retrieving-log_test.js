@@ -1,12 +1,12 @@
 'use strict';
 
 var nodeLogentriesRetrievingLog = require('../');
-var assert = require('should');
+var assert = require('assert');
 
 describe('nodeLogentriesRetrievingLog', function () {
 
   it('should be awesome', function () {
-    nodeLogentriesRetrievingLog().should.equal('awesome');
+    assert(nodeLogentriesRetrievingLog() == 'awesome');
   });
 
 });

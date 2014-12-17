@@ -17,8 +17,7 @@
     "gulp-load-plugins": "^0.8.0",
     "gulp-mocha": "^2.0.0",
     "gulp-plumber": "^0.6.5",
-    "jshint-stylish": "^1.0.0",
-    "should": "^4.0.4"
+    "jshint-stylish": "^1.0.0"
   },
   "homepage": "https://github.com/sanemat/node-logentries-retrieving-log",
   "keywords": [],
