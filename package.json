@@ -20,6 +20,7 @@
     "gulp-plumber": "^0.6.5",
     "intelli-espower-loader": "^0.5.0",
     "jshint-stylish": "^1.0.0",
+    "nock": "^0.52.1",
     "power-assert": "^0.10.0"
   },
   "directories": {
