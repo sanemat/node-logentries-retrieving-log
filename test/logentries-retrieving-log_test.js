@@ -1,6 +1,6 @@
 'use strict';
 
-var logentriesRetrievingLog = require('../');
+var LogentriesRetrievingLog = require('../');
 var assert = require('power-assert');
 
 describe('logentriesRetrievingLog', function () {
