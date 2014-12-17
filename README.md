@@ -38,7 +38,7 @@ Copyright (c) 2014 sanemat. Licensed under the MIT license.
 [npm-image]: https://badge.fury.io/js/logentries-retrieving-log.svg
 [travis-url]: https://travis-ci.org/sanemat/node-logentries-retrieving-log
 [travis-image]: https://travis-ci.org/sanemat/node-logentries-retrieving-log.svg?branch=master
-[daviddm-url]: https://david-dm.org/sanemat/logentries-retrieving-log.svg?theme=shields.io
-[daviddm-image]: https://david-dm.org/sanemat/logentries-retrieving-log
+[daviddm-url]: https://david-dm.org/sanemat/node-logentries-retrieving-log.svg?theme=shields.io
+[daviddm-image]: https://david-dm.org/sanemat/node-logentries-retrieving-log
 [coveralls-url]: https://coveralls.io/r/sanemat/node-logentries-retrieving-log
 [coveralls-image]: https://coveralls.io/repos/sanemat/node-logentries-retrieving-log/badge.png
