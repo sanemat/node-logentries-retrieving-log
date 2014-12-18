@@ -7,7 +7,9 @@
     "email": "o.gata.ken@gmail.com"
   },
   "bugs": "https://github.com/sanemat/node-logentries-retrieving-log/issues",
-  "dependencies": {},
+  "dependencies": {
+    "request": "^2.51.0"
+  },
   "devDependencies": {
     "coveralls": "^2.11.1",
     "espower-loader": "^0.10.0",
