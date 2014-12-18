@@ -12,13 +12,13 @@ describe('logentriesRetrievingLog', function () {
     done();
   });
 
-  it('should retrieve logs', function (done) {
-    // https://pull.logentries.com/__YOUR_KEY__/__LOG_ADDR__/?limet=10
+  it('should retrieve logs length', function (done) {
+    // https://pull.logentries.com/__YOUR_KEY__/__LOG_ADDR__/?limit=10
     nock('https://pull.logentries.com')
-      .get('/__YOUR_KEY__/__LOG_ADDR__/?limet=10')
+      .get('/__YOUR_KEY__/__LOG_ADDR__/?limit=10')
       .replyWithFile(200, __dirname + '/logentries-com-retrieved-logs.txt');
-    retriever.getLogs({limit: 10}, function(err, data){
-      assert.equal(data.lines.length, 10);
+    retriever.getLogs({limit: 10}, function(err, response, body){
+      assert.equal(body.trim().split("\n").length, 10);
       done();
     });
   });
