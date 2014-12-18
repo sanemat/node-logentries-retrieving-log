@@ -37,6 +37,20 @@ describe('logentriesRetrievingLog', function () {
     });
   });
 
+  it('should retrieve logs contents without option', function (done) {
+    // https://pull.logentries.com/__YOUR_KEY__/__LOG_ADDR__/
+    nock('https://pull.logentries.com')
+      .get('/__YOUR_KEY__/__LOG_ADDR__/')
+      .replyWithFile(200, __dirname + '/logentries-com-retrieved-logs.txt');
+    retriever.getLogs(function(err, response, body){
+      assert.equal(
+        body.trim().split("\n")[3],
+        "131 <45>1 2014-12-16T13:00:48.084480+00:00 heroku web.1 - - Stopping all processes with SIGTERM"
+      );
+      done();
+    });
+  });
+
   it('should handle error response', function (done) {
     // https://pull.logentries.com/__YOUR_KEY__/__LOG_ADDR__/?invalid=true
     nock('https://pull.logentries.com')
