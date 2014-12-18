@@ -9,10 +9,10 @@
 'use strict';
 
 var LogentriesRetrievingLog = require('../');
-var retriever = LogentriesRetrievingLog({accountKey: '__YOUR_KEY__', logAddr: '__LOG_ADDR__'});
+var retriever = new LogentriesRetrievingLog({accountKey: '__YOUR_KEY__', logAddr: '__LOG_ADDR__'});
 retriever.getLogs({limit: 10}, function(err, response, body){
   body.split("\n");
-  //#=>
+  //#=> [
   //  "145 <45>1 2014-12-16T13:00:45.518543+00:00 heroku api - - Add logentries:tryit add-on by o.gata.ken@gmail.com",
   //  "137 <45>1 2014-12-16T13:00:45.518543+00:00 heroku api - - Release v11 created by o.gata.ken@gmail.com",
   //  "129 <45>1 2014-12-16T13:00:46.043594+00:00 heroku web.1 - - State changed from up to starting",
@@ -22,8 +22,9 @@ retriever.getLogs({limit: 10}, function(err, response, body){
   //  "134 <190>1 2014-12-16T13:00:56.108557+00:00 app web.1 - - coffeelint@1.7.1 node_modules/coffeelint",
   //  "117 <190>1 2014-12-16T13:00:56.108575+00:00 app web.1 - - ├── ignore@2.2.15",
   //  "117 <190>1 2014-12-16T13:00:56.108577+00:00 app web.1 - - ├── resolve@0.6.3",
-  //  "152 <190>1 2014-12-16T13:00:56.108578+00:00 app web.1 - - ├── optimist@0.6.1 (wordwrap@0.0.2, minimist@0.0.10)"
+  //  "152 <190>1 2014-12-16T13:00:56.108578+00:00 app web.1 - - ├── optimist@0.6.1 (wordwrap@0.0.2, minimist@0.0.10)",
   //  ""
+  //]
 });
 
 // API Downloads Documentation| Logentries Log Management Tools
