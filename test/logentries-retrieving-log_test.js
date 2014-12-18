@@ -36,4 +36,16 @@ describe('logentriesRetrievingLog', function () {
       done();
     });
   });
+
+  it('should handle error response', function (done) {
+    // https://pull.logentries.com/__YOUR_KEY__/__LOG_ADDR__/?invalid=true
+    nock('https://pull.logentries.com')
+      .get('/__YOUR_KEY__/__LOG_ADDR__/?invalid=true')
+      .replyWithFile(404, __dirname + '/logentries-com-error-response.txt');
+    retriever.getLogs({invalid: true}, function(err, response, body){
+      assert.equal(!err, false);
+      assert.equal(JSON.parse(body).response, 'error');
+      done();
+    });
+  });
 });
