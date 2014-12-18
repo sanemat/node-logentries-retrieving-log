@@ -8,7 +8,8 @@
   },
   "bugs": "https://github.com/sanemat/node-logentries-retrieving-log/issues",
   "dependencies": {
-    "request": "^2.51.0"
+    "request": "^2.51.0",
+    "trimmer": "^1.0.0"
   },
   "devDependencies": {
     "coveralls": "^2.11.1",
