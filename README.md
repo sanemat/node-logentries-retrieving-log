@@ -35,7 +35,7 @@ retriever.getLogs({limit: 10}, function(err, response, body){
 
 ## API
 
-### getLogs([options])
+### LogentriesRetrievingLog.getLogs([options])
 
 You can set `start`, `end`, `filter` and `limit`. See below.
 
