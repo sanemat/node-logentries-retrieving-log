@@ -1,4 +1,4 @@
 
-# 0.1.0 (2014-12-17)
+# 0.1.0 (2014-12-18)
 
-- Initial version
+- Retrieving log
