@@ -12,8 +12,10 @@
     "trimmer": "^1.0.0"
   },
   "devDependencies": {
+    "conventional-changelog": "^0.4.3",
     "coveralls": "^2.11.1",
     "espower-loader": "^0.10.0",
+    "fixpack": "^2.2.0",
     "gulp": "^3.8.8",
     "gulp-istanbul": "^0.5.0",
     "gulp-jscs": "^1.1.2",
@@ -24,6 +26,7 @@
     "intelli-espower-loader": "^0.5.0",
     "jshint-stylish": "^1.0.0",
     "nock": "^0.52.1",
+    "npm-check-updates": "^2.2.2",
     "power-assert": "^0.10.0"
   },
   "directories": {
@@ -42,6 +45,9 @@
   },
   "scripts": {
     "coveralls": "gulp test && cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
-    "test": "gulp test"
+    "test": "gulp test",
+    "fixpack": "fixpack",
+    "ncu": "ncu -u",
+    "changelog": "conventional-changelog -i CHANGELOG.md --overwrite --preset angular"
   }
 }
