@@ -13,7 +13,7 @@
   "requireLineFeedAtFileEnd": true,
   "validateIndentation": 2,
   "validateQuoteMarks": "'",
-  "validateJSDoc": {
+  "jsDoc": {
     "checkParamNames": true,
     "requireParamTypes": true
   }
