@@ -29,6 +29,9 @@
   "directories": {
     "test": "test/"
   },
+  "files": [
+    "lib"
+  ],
   "homepage": "https://github.com/sanemat/node-logentries-retrieving-log",
   "keywords": [],
   "license": "MIT",
