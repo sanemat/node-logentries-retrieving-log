@@ -44,10 +44,10 @@
     "url": "https://github.com/sanemat/node-logentries-retrieving-log"
   },
   "scripts": {
+    "changelog": "conventional-changelog -i CHANGELOG.md --overwrite --preset angular",
     "coveralls": "gulp test && cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
-    "test": "gulp test",
     "fixpack": "fixpack",
     "ncu": "ncu -u",
-    "changelog": "conventional-changelog -i CHANGELOG.md --overwrite --preset angular"
+    "test": "gulp test"
   }
 }
