@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "logentries-retrieving-log": "file:.."
+  }
+}
