@@ -1,6 +1,6 @@
 {
   "name": "logentries-retrieving-log",
-  "description": "Retrieve logs from logentries.com.",
+  "description": "Retrieve logs from logentries.com. Unoffical.",
   "version": "0.1.2-beta",
   "author": {
     "name": "sanemat",
@@ -36,7 +36,12 @@
     "lib"
   ],
   "homepage": "https://github.com/sanemat/node-logentries-retrieving-log",
-  "keywords": [],
+  "keywords": [
+    "log",
+    "logentries",
+    "logentries.com",
+    "unoffical"
+  ],
   "license": "MIT",
   "main": "lib/logentries-retrieving-log.js",
   "repository": {

@@ -1,7 +1,7 @@
 # logentries-retrieving-log
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image] [![Coverage Status][coveralls-image]][coveralls-url]
+[![NPM version][npm-image]][npm-url] [![Travis-CI Status][travis-image]][travis-url] [![Appveyor Status][appveyor-image]][appveyor-url] [![Daviddm Status][daviddm-image]][daviddm-url]
 
-Retrieve logs from `logentries.com`.
+Retrieve logs from `logentries.com`. Unofficial.
 
 
 ## Install
@@ -56,12 +56,11 @@ Welcome.
 Copyright (c) 2014 sanemat. Licensed under the MIT license.
 
 
-
-[npm-url]: https://npmjs.org/package/logentries-retrieving-log
-[npm-image]: https://badge.fury.io/js/logentries-retrieving-log.svg
 [travis-url]: https://travis-ci.org/sanemat/node-logentries-retrieving-log
-[travis-image]: https://travis-ci.org/sanemat/node-logentries-retrieving-log.svg?branch=master
-[daviddm-url]: https://david-dm.org/sanemat/node-logentries-retrieving-log.svg?theme=shields.io
-[daviddm-image]: https://david-dm.org/sanemat/node-logentries-retrieving-log
-[coveralls-url]: https://coveralls.io/r/sanemat/node-logentries-retrieving-log
-[coveralls-image]: https://coveralls.io/repos/sanemat/node-logentries-retrieving-log/badge.png
+[travis-image]: https://img.shields.io/travis/sanemat/node-logentries-retrieving-log/master.svg?style=flat-square&label=travis
+[appveyor-url]: https://ci.appveyor.com/project/sanemat/node-logentries-retrieving-log/branch/master
+[appveyor-image]: https://img.shields.io/appveyor/ci/sanemat/node-logentries-retrieving-log/master.svg?style=flat-square&label=appveyor
+[npm-url]: https://npmjs.org/package/logentries-retrieving-log
+[npm-image]: https://img.shields.io/npm/v/logentries-retrieving-log.svg?style=flat-square
+[daviddm-url]: https://david-dm.org/sanemat/node-logentries-retrieving-log
+[daviddm-image]: https://img.shields.io/david/sanemat/node-logentries-retrieving-log.svg?style=flat-square
