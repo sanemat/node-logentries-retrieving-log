@@ -2,9 +2,9 @@ language: node_js
 sudo: false
 env: CI=true
 node_js:
-  - '0.10'
-  - '0.12'
-  - '4'
+  - 4
+  - 6
+  - 7
 script: "npm run verify"
 after_script:
   - npm run coveralls
